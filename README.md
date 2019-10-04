@@ -27,7 +27,7 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 
 ## Project Links
 
-![Live Build](www.link.com)
+[Live Build](www.link.com)
 
 ## Wireframes
 
@@ -40,7 +40,7 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 
 ## ERD
 
-[ERD](https://res.cloudinary.com/mrtommyliang/image/upload/v1570202115/The%20Lofi%20Project/Screen_Shot_2019-10-04_at_11.15.02_AM_h3gum4.png)
+![ERD](https://res.cloudinary.com/mrtommyliang/image/upload/v1570202115/The%20Lofi%20Project/Screen_Shot_2019-10-04_at_11.15.02_AM_h3gum4.png)
 
 
 ## MVP/Post MVP
