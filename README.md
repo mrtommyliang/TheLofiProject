@@ -27,7 +27,7 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 
 ## Project Links
 
-[Live Build](www.link.com)
+![Live Build](www.link.com)
 
 ## Wireframes
 
