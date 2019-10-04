@@ -59,7 +59,7 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 ## Components
 #### Component Description
 |Component| Description  |
-|--|--|
+|:--|:--|
 | Nav Bar | The `nav bar` will house and route the other components including Home, About, Favorites, Daily Mix, </> Mix, *~~Recommendations~~* |
 | Search | The `search` component will allow the user to search for a song based off many options including Title, Artist, and Type(Lyrics, No Lyrics) |
 | About | The `about` component will route the user to the about page where it will show images of artists that defined the genre as well as history of how the music came about.  |
@@ -72,8 +72,8 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 
 #### Component Timeline
 
-| Component | Priority | Estimated Time| Actual Time
--|-|-|-
+| Component | Priority | Estimated| Actual
+|:-|:-|:-|:-
 | Nav Bar | High | 3 hr | TBA
 | Search | High | 2 hr | TBA
 | About | High | 1.5 hr | TBA
