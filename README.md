@@ -31,16 +31,16 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 
 ## Wireframes
 
-![Home](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/IMG_8945_qcqzop.jpg)
+[Home](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/IMG_8945_qcqzop.jpg)
 
-![About](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_2_kfqbxb.jpg)
+[About](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_2_kfqbxb.jpg)
 
-![Favorites](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_sjkhhp.jpg)
+[Favorites](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_sjkhhp.jpg)
 
 
 ## ERD
 
-![ERD](https://res.cloudinary.com/mrtommyliang/image/upload/v1570202115/The%20Lofi%20Project/Screen_Shot_2019-10-04_at_11.15.02_AM_h3gum4.png)
+[ERD](https://res.cloudinary.com/mrtommyliang/image/upload/v1570202115/The%20Lofi%20Project/Screen_Shot_2019-10-04_at_11.15.02_AM_h3gum4.png)
 
 
 ## MVP/Post MVP
