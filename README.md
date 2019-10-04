@@ -16,6 +16,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 ## Technologies used
  - Active Record
  - Auth
+ - Axios
  - BCrypt
  - Cors
  - CSS
