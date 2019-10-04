@@ -34,7 +34,7 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 - [Favorites](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_sjkhhp.jpg)
 
 ### Mobile
-[Home]()
+- [Home]()
 
 ## ERD
 
