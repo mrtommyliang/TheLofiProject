@@ -37,7 +37,7 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 ![Favorites](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_sjkhhp.jpg)
 
 ## ERD
-![ERD](https://res.cloudinary.com/mrtommyliang/image/upload/v1570201203/The%20Lofi%20Project/Screen_Shot_2019-10-04_at_10.59.46_AM_p9pjxw.png)
+![ERD](https://res.cloudinary.com/mrtommyliang/image/upload/v1570202115/The%20Lofi%20Project/Screen_Shot_2019-10-04_at_11.15.02_AM_h3gum4.png)
 
 ## MVP/Post MVP
 ### MVP
@@ -47,7 +47,7 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
  - Full CRUD functionality 
 	 - **Create**: Create user/add favorites
 	 - **Read**: Visualize different songs on the page
-	 - **Update**: Update rating
+	 - **Update**: Update user information
 	 - **Delete**: Delete favorites
 
 ### Post MVP
@@ -68,7 +68,6 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 | Daily Mix | The `daily mix` component will be a randomized list of `songs card`|
 | </> Mix| The `</> mix` component will be a curated list of `songs card` defined by me|
 | Easter Egg | The `easter egg` component will be a Post MVP feature |
-| Ratings | The `rating` component will allow the user to rate songs |
 | Recommendations | The `recommendations` component will display to the user a list of songs |
 
 #### Component Timeline
@@ -83,7 +82,6 @@ Lofi music (otherwise known as lo-fidelity) has been integral to my productivity
 | Daily Mix | High | 2 hr | TBA
 | </> Mix | High | 2 hr | TBA
 | Easter Egg | High | 1.5 hr | TBA
-| Ratings | High | 3 hr | TBA
 | Recommendations | POST | 4 hr | TBA
 | Total | N/A | 25 hr | 35 hr
 
