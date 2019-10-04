@@ -11,7 +11,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 
 ## User Story
 
-> As a working professional, you are looking for a place to calm and center yourself in a loud and busy world. To focus and relax, you go to thelofiproject.com to find music that is able to help you stay calm and focused. Today, you are looking for music without lyrics. Upon entering the page, you login, and go to the daily mix and sort it by "No Lyrics". You sit back, and you start typing away.
+> As a working professional, you are looking for a place to calm and center yourself in a loud and busy world. To focus and relax, you go to [thelofiproject.com](thelofiproject.com) to find music that is able to help you stay calm and focused. Today, you are looking for music without lyrics. Upon entering the page, you login, and go to the daily mix and sort it by "No Lyrics". You sit back, and you start typing away.
 
 ## Technologies used
  - Active Record
