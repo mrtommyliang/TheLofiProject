@@ -68,10 +68,10 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 | `Favorites` | The `Favorites` component will display all of the users favorites.|
 | `Header` | The `Header` component will display the header and include user info.|
 | `Login/Logout` | The `Login/Logout` component will allow user to login or logout.|
-| `Nav Bar` | The `Nav Bar` will house and route the other components including `Home`, `About`, `Favorites`, `Daily Mix`, `</> Mix`, `Recommendations`. |
+| `Nav Bar` | The `Nav Bar` will house and route the other components including `Home`, `About`, `Favorites`, `Daily Mix`, `</> Mix`, `Recommended`. |
 | `Search` | The `Search` component will allow the user to search for a song based off many options including Title, Artist, and Type: *Lyrics, No Lyrics*.|
 | `Songs Card` | The `Songs Card` component will be how the cards are represented on the page. Each card will show the title of the song and the artist. |
-| `Recommendations` | The `Recommendations` component will display to the user a list of songs. |
+| `Recommended` | The `Recommended` component will display to the user a list of songs. |
 | `User Info` | The `User Info` component will allow user to view or adjust their user information.|
 | `</> Mix` | The `</> Mix` component will be a curated list of `Songs Card` defined by me.|
 
@@ -87,7 +87,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 | `Header` | High | 1.5 hr | TBA
 | `Login/Logout` | High | 2 hr | TBA
 | `Nav Bar` | High | 3 hr | TBA
-| `Recommendations` | POST | 4 hr | TBA
+| `Recommended` | POST | 4 hr | TBA
 | `Search` | High | 2 hr | TBA
 | `Songs Card` | High | 2.5 hr | TBA
 | `Styling` | HIGH | 4.5 hr| TBA
