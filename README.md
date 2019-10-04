@@ -62,6 +62,9 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 
 |Component| Description |
 |:--|:--|
+| `Header` | The `Header` component will display the header and include user info.|
+| `Login/Logout` | The `Login/Logout` component will allow user to login or logout.|
+| `User Info` | The `User Info` component will allow user to view or adjust their user information.|
 | `Nav Bar` | The `Nav Bar` will house and route the other components including `Home`, `About`, `Favorites`, `Daily Mix`, `</> Mix`, `Recommendations`. |
 | `Search` | The `Search` component will allow the user to search for a song based off many options including Title, Artist, and Type: *Lyrics, No Lyrics*.|
 | `About` | The `About` component will route the user to the about page where it will show images of artists that defined the genre as well as history of how the music came about. |
@@ -76,6 +79,8 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 
 | Component | Priority | Estimated| Actual |
 |:-|:-|:-|:-|
+| `Header` | High | 1.5 hr | TBA
+| `Login/Logout` | High | 2 hr | TBA
 | `Nav Bar` | High | 3 hr | TBA
 | `Search` | High | 2 hr | TBA
 | `About` | High | 1.5 hr | TBA
