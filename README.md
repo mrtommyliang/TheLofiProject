@@ -62,37 +62,37 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 
 |Component| Description |
 |:--|:--|
+| `About` | The `About` component will route the user to the about page where it will show images of artists that defined the genre as well as history of how the music came about. |
+| `Daily Mix` | The `Daily Mix` component will be a randomized list of `Songs Card`.|
+| `Easter Egg` | The `Easter Egg` component will be a Post MVP feature. |
+| `Favorites` | The `Favorites` component will display all of the users favorites.|
 | `Header` | The `Header` component will display the header and include user info.|
 | `Login/Logout` | The `Login/Logout` component will allow user to login or logout.|
-| `User Info` | The `User Info` component will allow user to view or adjust their user information.|
 | `Nav Bar` | The `Nav Bar` will house and route the other components including `Home`, `About`, `Favorites`, `Daily Mix`, `</> Mix`, `Recommendations`. |
 | `Search` | The `Search` component will allow the user to search for a song based off many options including Title, Artist, and Type: *Lyrics, No Lyrics*.|
-| `About` | The `About` component will route the user to the about page where it will show images of artists that defined the genre as well as history of how the music came about. |
 | `Songs Card` | The `Songs Card` component will be how the cards are represented on the page. Each card will show the title of the song and the artist. |
-| `Favorites` | The `Favorites` component will display all of the users favorites.|
-| `Daily Mix` | The `Daily Mix` component will be a randomized list of `Songs Card`.|
-| `</> Mix` | The `</> Mix` component will be a curated list of `Songs Card` defined by me.|
-| `Easter Egg` | The `Easter Egg` component will be a Post MVP feature. |
 | `Recommendations` | The `Recommendations` component will display to the user a list of songs. |
+| `User Info` | The `User Info` component will allow user to view or adjust their user information.|
+| `</> Mix` | The `</> Mix` component will be a curated list of `Songs Card` defined by me.|
 
 
 ### Component Timeline
 
 | Component | Priority | Estimated| Actual |
 |:-|:-|:-|:-|
+| `About` | High | 1.5 hr | TBA
+| `Daily Mix` | High | 2 hr | TBA
+| `Easter Egg` | High | 1.5 hr | TBA
+| `Favorites` | High | 3.5 hr | TBA
 | `Header` | High | 1.5 hr | TBA
 | `Login/Logout` | High | 2 hr | TBA
-| `User Info` | High | 2 hr | TBA
 | `Nav Bar` | High | 3 hr | TBA
-| `Search` | High | 2 hr | TBA
-| `About` | High | 1.5 hr | TBA
-| `Songs Card` | High | 2.5 hr | TBA
-| `Favorites` | High | 3.5 hr | TBA
-| `Daily Mix` | High | 2 hr | TBA
-| `</> Mix` | High | 2 hr | TBA
-| `Easter Egg` | High | 1.5 hr | TBA
 | `Recommendations` | POST | 4 hr | TBA
-|`Styling` | HIGH | 4.5 hr| TBA
+| `Search` | High | 2 hr | TBA
+| `Songs Card` | High | 2.5 hr | TBA
+| `Styling` | HIGH | 4.5 hr| TBA
+| `User Info` | High | 2 hr | TBA
+| `</> Mix` | High | 2 hr | TBA
 | **Total Time:** | **N/A** | **34.5 hr** | **35 hr**
 
 ## Code Snippet
