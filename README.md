@@ -75,12 +75,14 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 | `Easter Egg` | The `Easter Egg` component will be a Post MVP feature. |
 | `Recommendations` | The `Recommendations` component will display to the user a list of songs. |
 
+
 ### Component Timeline
 
 | Component | Priority | Estimated| Actual |
 |:-|:-|:-|:-|
 | `Header` | High | 1.5 hr | TBA
 | `Login/Logout` | High | 2 hr | TBA
+| `User Info` | High | 2 hr | TBA
 | `Nav Bar` | High | 3 hr | TBA
 | `Search` | High | 2 hr | TBA
 | `About` | High | 1.5 hr | TBA
@@ -91,9 +93,8 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 | `Easter Egg` | High | 1.5 hr | TBA
 | `Recommendations` | POST | 4 hr | TBA
 |`Styling` | HIGH | 4.5 hr| TBA
-| **Total Time:** | **N/A** | **29.5 hr** | **35 hr**
+| **Total Time:** | **N/A** | **34.5 hr** | **35 hr**
 
-  
 ## Code Snippet
 
 `
