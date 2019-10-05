@@ -28,14 +28,19 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 
 [Live Build](www.link.com)
 
+## React Architecture
+
+![React](https://res.cloudinary.com/mrtommyliang/image/upload/v1570312218/The%20Lofi%20Project/React%20Arch.png)
+
 ## Wireframes
 ### Desktop
-- [Home](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/IMG_8945_qcqzop.jpg)
-- [About](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_2_kfqbxb.jpg)
-- [Favorites](https://res.cloudinary.com/mrtommyliang/image/upload/v1570196282/The%20Lofi%20Project/Image_from_iOS_sjkhhp.jpg)
+- [Home](https://res.cloudinary.com/mrtommyliang/image/upload/v1570316051/The%20Lofi%20Project/Desktop%20Home.png)
+- [About](https://res.cloudinary.com/mrtommyliang/image/upload/v1570316141/The%20Lofi%20Project/Desktop%20About.png)
+- [Favorites](https://res.cloudinary.com/mrtommyliang/image/upload/v1570316051/The%20Lofi%20Project/Desktop%20Favorites.png)
 
 ### Mobile
-- [Home]()
+- [Home](https://res.cloudinary.com/mrtommyliang/image/upload/v1570316051/The%20Lofi%20Project/Mobile%20Main.png)
+- [Favorites](https://res.cloudinary.com/mrtommyliang/image/upload/v1570316051/The%20Lofi%20Project/Mobile%20Favorites.png)
 
 ## ERD
 
