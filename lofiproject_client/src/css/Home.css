@@ -1,6 +1,6 @@
 .mainBody {
 background-image: url('../images/lofibg.jpg');
-background-repeat: cover;
+background-size: cover;
 height: 100vh;
 }
 
