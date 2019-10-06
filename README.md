@@ -112,10 +112,5 @@ Code Snippet Here
 ## Resources and Citations
 - Gif in readme from [here](https://melmagazine.com/en-us/story/teens-are-flocking-to-youtube-to-study)
 - Image in background from [here](https://wallpaperaccess.com/japanese-anime-city)
-- Item 3
-- Item 4
-- Item 5
 
 ## Issues
-- Issue 1
-- Issue 2
