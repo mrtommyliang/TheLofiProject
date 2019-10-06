@@ -23,7 +23,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
  - Javascript
  - React
  - React Router Dom
- - ![React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
+ - [React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
 
 ## Project Links
 
