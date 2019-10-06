@@ -2,12 +2,14 @@ import React from 'react';
 import './App.css';
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import Header from './Components/Header'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
+      <Header />
     </div>
-  );
+  )
 }
 
 export default App;
