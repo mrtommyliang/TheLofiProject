@@ -23,6 +23,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
  - Javascript
  - React
  - React Router Dom
+ - ![React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
 
 ## Project Links
 
@@ -30,7 +31,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 
 ## React Architecture
 
-![React](https://res.cloudinary.com/mrtommyliang/image/upload/v1570312218/The%20Lofi%20Project/React%20Arch.png)
+![React](https://res.cloudinary.com/mrtommyliang/image/upload/v1570382884/The%20Lofi%20Project/React_Arch.png)
 
 ## Wireframes
 ### Desktop
@@ -74,7 +75,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 | `Favorites` | The `Favorites` component will display all of the users favorites.|
 | `Header` | The `Header` component will display the header and include user info.|
 | `Login/Logout` | The `Login/Logout` component will allow user to login or logout.|
-| `Nav Bar` | The `Nav Bar` will house and route the other components including `Home`, `About`, `Favorites`, `Daily Mix`, `</> Mix`, `Recommended`. |
+| `Sidebar` | The `Sidebar` will house and route the other components including `Home`, `About`, `Favorites`, `Daily Mix`, `</> Mix`, `Recommended`. |
 | `Search` | The `Search` component will allow the user to search for a song based off many options including Title, Artist, and Type: *Lyrics, No Lyrics*.|
 | `Songs Card` | The `Songs Card` component will be how the cards are represented on the page. Each card will show the title of the song and the artist. |
 | `Recommended` | The `Recommended` component will display to the user a list of songs. |
@@ -92,7 +93,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 | `Favorites` | High | 3.5 hr | TBA
 | `Header` | High | 1.5 hr | TBA
 | `Login/Logout` | High | 2 hr | TBA
-| `Nav Bar` | High | 3 hr | TBA
+| `Sidebar` | High | 3 hr | TBA
 | `Recommended` | POST | 4 hr | TBA
 | `Search` | High | 2 hr | TBA
 | `Songs Card` | High | 2.5 hr | TBA
@@ -110,7 +111,7 @@ Code Snippet Here
 
 ## Resources and Citations
 - Gif in readme from [here](https://melmagazine.com/en-us/story/teens-are-flocking-to-youtube-to-study)
-- Item 2
+- Image in background from [here](https://wallpaperaccess.com/japanese-anime-city)
 - Item 3
 - Item 4
 - Item 5
