@@ -1,0 +1,10 @@
+.mainBody {
+background-image: url('../images/lofibg.jpg');
+background-repeat: cover;
+height: 100vh;
+}
+
+.bodyOverlay {
+  background-color: rgba(25,25,25, .8);
+  height: 100vh;
+}
