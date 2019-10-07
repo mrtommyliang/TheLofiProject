@@ -20,7 +20,7 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-
+  display: none;
 }
 
 /* Color/shape of close button cross */
@@ -58,7 +58,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  /* display: inline-block; */
   color: white;
   text-decoration: none;
   line-height: 50px;
@@ -71,4 +70,32 @@ Note: Beware of modifying this element as it can break the animations - you shou
   transform: scale(1.04);
   padding-left: 30px;
   border-left: 1px solid white;
+}
+
+.logReg{
+  font-size: 16px;
+}
+
+#login {
+  color: white;
+  text-decoration: none !important;
+  margin: 5px;
+  transition: ease .3s !important;
+}
+
+#login:hover {
+  border-bottom: 1px solid white;
+  color: rgba(67, 233, 123, 1);
+}
+
+#register {
+  color: white;
+  text-decoration: none !important;
+  margin: 5px;
+  transition: ease .3s !important;
+}
+
+#register:hover {
+  border-bottom: 1px solid white;
+  color: rgba(250, 112, 154, 1);
 }
