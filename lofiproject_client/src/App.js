@@ -5,6 +5,7 @@ import Login from './Components/Login'
 import Register from './Components/Register';
 import Header from './Components/Header'
 import Home from './Components/Home'
+import Switcher from './Components/Switcher';
 
 
 import {
@@ -108,6 +109,7 @@ class App extends Component {
         <Route exact path="/home" render={(props) => (
           <Home/> )} />
           <Home />
+          <Switcher/>
       </div>
     );
   }
