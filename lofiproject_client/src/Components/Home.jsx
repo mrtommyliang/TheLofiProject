@@ -13,7 +13,7 @@ const Home = (props) => {
   return (
     <div className="mainBody">
       <div className="bodyOverlay">
-      <Switch>
+        <Switch>
           <Route exact path="/login" render={() => (
             <Login
               handleLogin={props.handleLogin}
@@ -23,7 +23,7 @@ const Home = (props) => {
           <Route exact path="/register" render={(props) => (
             <Register
               handleRegister={props.handleRegister}
-              handleChange={props.authHandleChange}
+              handleChange={props.handleChange}
               formData={props.formData} />)} />
 
           <Route exact path='/about' component={About} />

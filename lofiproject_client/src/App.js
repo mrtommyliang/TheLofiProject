@@ -3,14 +3,7 @@ import {Route, Link} from 'react-router-dom';
 import { withRouter } from 'react-router';
 import Header from './Components/Header'
 import Home from './Components/Home'
-import Switcher from './Components/Switcher';
-
-
-import {
-  loginUser,
-  registerUser,
-  verifyUser
-} from './services/api-helper';
+import { loginUser, registerUser, verifyUser } from './services/api-helper';
 
 
 class App extends Component {
@@ -77,26 +70,18 @@ class App extends Component {
   render() {
     return (
       <div className= 'App'>
-        <Header currentUser= {this.state.currentUser} />
-        <header>
-          <Link to='/'><h1></h1></Link>
-          {this.state.currentUser
-            ?
-            <div>
-              <h3>Hello {this.state.currentUser && this.state.currentUser.username}<button onClick={this.handleLogout}>logout</button></h3>
-              <Link to="/home">Home</Link>
-              <hr />
-            </div>
-            :
-            <button onClick={this.handleLoginButton}>Login/register</button>
-          }
-        </header>
+        <Header currentUser= {this.state.currentUser}
+        handleLogout={this.handleLogout} 
+        handleLoginButton={this.handleLoginButton}
+        handleChange={this.authHandleChange}/>
+
         
         <Home 
         handleLogin={this.handleLogin}
         handleChange={this.authHandleChange}
         formData={this.state.authFormData}
         handleRegister={this.handleRegister}/>
+
       </div>
     );
   }
