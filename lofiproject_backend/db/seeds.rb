@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Song.create([
+  {yt_link: "https://www.youtube.com/watch?v=E2GfJTFWreE", artist: "Spencer Hunt", title: "You'll be okay, I promise"},
+  {yt_link: "https://www.youtube.com/watch?v=E2GfJTFWreE", artist: "Spencer Hunt", title: "You'll be okay, I promise"}
+])
