@@ -1,17 +1,9 @@
 import React, {Component} from 'react';
 import {Route, Link} from 'react-router-dom';
 import { withRouter } from 'react-router';
-import Login from './Components/Login'
-import Register from './Components/Register';
 import Header from './Components/Header'
 import Home from './Components/Home'
-
-
-import {
-  loginUser,
-  registerUser,
-  verifyUser
-} from './services/api-helper';
+import { loginUser, registerUser, verifyUser } from './services/api-helper';
 
 
 class App extends Component {
@@ -20,10 +12,10 @@ class App extends Component {
 
     this.state = {
     currentUser: null,
-      formData: {
+    formData: {
         name: ""
       },
-      authFormData: {
+    authFormData: {
         username: "",
         password: ""
       }
@@ -78,36 +70,18 @@ class App extends Component {
   render() {
     return (
       <div className= 'App'>
-        <Header currentUser= {this.state.currentUser} />
-        <header>
-          <Link to='/'><h1></h1></Link>
-          {this.state.currentUser
-            ?
-            <div>
-              <h3>Hello {this.state.currentUser && this.state.currentUser.username}<button onClick={this.handleLogout}>logout</button></h3>
-              <Link to="/home">Home</Link>
-              <hr />
-            </div>
-            :
-            <button onClick={this.handleLoginButton}>Login/register</button>
-          }
-        </header>
+        <Header currentUser= {this.state.currentUser}
+        handleLogout={this.handleLogout} 
+        handleLoginButton={this.handleLoginButton}
+        authHandleChange={this.authHandleChange}/>
 
-        <Route exact path="/login" render={(props) => (
-          <Login
-            handleLogin={this.handleLogin}
-            handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} />
+        
+        <Home 
+        handleLogin={this.handleLogin}
+        authHandleChange={this.authHandleChange}
+        authFormData={this.state.authFormData}
+        handleRegister={this.handleRegister}/>
 
-        <Route exact path="/register" render={(props) => (
-          <Register
-            handleRegister={this.handleRegister}
-            handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} />
-
-        <Route exact path="/home" render={(props) => (
-          <Home/> )} />
-          <Home />
       </div>
     );
   }

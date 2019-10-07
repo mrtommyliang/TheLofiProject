@@ -1,15 +1,15 @@
 import React from 'react';
+import '../css/Register.css'
 
 // This component handles our register form
 const Register = (props) => {
-
+console.log('reg',props)
   return (
     <div>
-      <h2>Register</h2>
-      <hr />
-      <form onSubmit={props.handleRegister} >
-        <input name="username" type="text" value={props.formData.username} onChange={props.handleChange} />
-        <input name="password" type="password" value={props.formData.password} onChange={props.handleChange} />
+      <form onSubmit={props.handleRegister}>
+      <h1>Register</h1>
+        <input name="username" type="text" placeholder="Username" className="username" value={props.authFormData.username} onChange={props.authHandleChange} />
+        <input name="password" type="password" placeholder="Password" className="password" value={props.authFormData.password} onChange={props.authHandleChange} />
         <button>Register</button>
       </form>
     </div>
