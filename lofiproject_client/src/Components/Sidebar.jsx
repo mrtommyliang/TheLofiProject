@@ -12,6 +12,10 @@ const Sidebar = () => {
         <a id="daily_mix" className="menu-item" href="/daily_mix">Daily Mix</a>
         <a id="recommended" className="menu-item" href="/recommended">Recommended</a>
         <a id="programmers_mix" className="menu-item" href="/programmers_mix">Programmer's Mix</a>
+        <div className="logReg">
+          <a id="login" className="menu-item" href="/login">Login</a>
+          <a id="register" className="menu-item" href="/register">Register</a>
+        </div>
       </Menu>
     </div>
   )

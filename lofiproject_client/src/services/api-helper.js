@@ -3,11 +3,6 @@ const api = axios.create({
   baseURL: 'http://localhost:3000'
 });
 
-// ========================== EDIT ============================
-// ========================== ALL  ============================
-// ========================== OF   ============================
-// ========================== THIS ============================
-
 export const loginUser = async (loginData) => {
   const resp = await api.post('/auth/login', loginData)
   localStorage.setItem('authToken', resp.data.token);
@@ -83,3 +78,4 @@ export const putFoodFlavor = async (food_id, id) => {
   })
   return resp.data
 }
+
