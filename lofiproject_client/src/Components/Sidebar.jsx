@@ -5,7 +5,7 @@ import { stack as Menu } from 'react-burger-menu'
 const Sidebar = () => {
   return (
     <div>
-      <Menu noOverlay>
+      <Menu disableAutoFocus>
         <a id="home" className="menu-item" href="/">Home</a>
         <a id="about" className="menu-item" href="/about">About</a>
         <a id="favorites" className="menu-item" href="/contact">Favorites</a>
