@@ -1,3 +1,10 @@
+.helloUsername {
+
+}
+.helloUsername:hover {
+  border-left: none;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -97,5 +104,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 #register:hover {
   border-bottom: 1px solid white;
-  color: rgba(250, 112, 154, 1);
+  color: rgba(0, 198, 251, 1);
+}
+
+#logout {
+  color: white;
+  text-decoration: none !important;
+  margin: 5px;
+  transition: ease .3s !important;
+}
+
+#logout:hover {
+  border-bottom: 1px solid white;
+  color: rgba(248, 54, 0, 1)
 }

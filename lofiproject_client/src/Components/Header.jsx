@@ -8,7 +8,9 @@ const Header = (props) => {
   return (
     <div className="headerMain">
       <h1>The Lofi Project</h1>
-      <Sidebar currentUser={props.currentUser}/>
+      <Sidebar 
+        currentUser={props.currentUser}
+        handleLogout={props.handleLogout}/>
     </div>
   )
 }
