@@ -17,14 +17,14 @@ const Home = (props) => {
           <Route exact path="/login" render={() => (
             <Login
               handleLogin={props.handleLogin}
-              handleChange={props.authHandleChange}
-              formData={props.formData} />)} />
+              authHandleChange={props.authHandleChange}
+              authFormData={props.authFormData} />)} />
 
-          <Route exact path="/register" render={(props) => (
+          <Route exact path="/register" render={() => (
             <Register
               handleRegister={props.handleRegister}
-              handleChange={props.handleChange}
-              formData={props.formData} />)} />
+              authHandleChange={props.authHandleChange}
+              authFormData={props.authFormData} />)} />
 
           <Route exact path='/about' component={About} />
           <Route path='/favorites' component={Favorites} />

@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     <div className="headerMain">
       <h1>The Lofi Project</h1>
-      <Sidebar />
+      <Sidebar currentUser={props.currentUser}/>
     </div>
   )
 }

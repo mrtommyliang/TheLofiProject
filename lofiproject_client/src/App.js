@@ -12,10 +12,10 @@ class App extends Component {
 
     this.state = {
     currentUser: null,
-      formData: {
+    formData: {
         name: ""
       },
-      authFormData: {
+    authFormData: {
         username: "",
         password: ""
       }
@@ -73,13 +73,13 @@ class App extends Component {
         <Header currentUser= {this.state.currentUser}
         handleLogout={this.handleLogout} 
         handleLoginButton={this.handleLoginButton}
-        handleChange={this.authHandleChange}/>
+        authHandleChange={this.authHandleChange}/>
 
         
         <Home 
         handleLogin={this.handleLogin}
-        handleChange={this.authHandleChange}
-        formData={this.state.authFormData}
+        authHandleChange={this.authHandleChange}
+        authFormData={this.state.authFormData}
         handleRegister={this.handleRegister}/>
 
       </div>
