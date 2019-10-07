@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {Route, Link} from 'react-router-dom';
 import { withRouter } from 'react-router';
-import Login from './Components/Login'
-import Register from './Components/Register';
 import Header from './Components/Header'
 import Home from './Components/Home'
 import Switcher from './Components/Switcher';
@@ -93,23 +91,12 @@ class App extends Component {
             <button onClick={this.handleLoginButton}>Login/register</button>
           }
         </header>
-
-        <Route exact path="/login" render={(props) => (
-          <Login
-            handleLogin={this.handleLogin}
-            handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} />
-
-        <Route exact path="/register" render={(props) => (
-          <Register
-            handleRegister={this.handleRegister}
-            handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} />
-
-        <Route exact path="/home" render={(props) => (
-          <Home/> )} />
-          <Home />
-          <Switcher/>
+        
+        <Home 
+        handleLogin={this.handleLogin}
+        handleChange={this.authHandleChange}
+        formData={this.state.authFormData}
+        handleRegister={this.handleRegister}/>
       </div>
     );
   }
