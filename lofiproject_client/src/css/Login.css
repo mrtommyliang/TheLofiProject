@@ -11,9 +11,10 @@ form {
   letter-spacing: 10px;
 }
 
-h1 {
+.login {
   color: white;
 }
+
 label {
   font-family: sans-serif;
   letter-spacing: 6px;

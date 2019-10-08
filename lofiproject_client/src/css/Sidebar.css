@@ -85,12 +85,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   transform: scale(1.04);
   padding-left: 30px;
   border-left: 1px solid white;
+  border-bottom: none;
 }
 
 .bm-overlay {
   background: rgba(0, 0, 0, 0.5) !important;
-    padding-top: 25%;
-    margin-top: -25%;
+  padding-top: 25%;
+  margin-top: -25%;
 }
 
 .logReg{
