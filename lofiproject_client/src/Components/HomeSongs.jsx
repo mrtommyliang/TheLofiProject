@@ -14,10 +14,10 @@ const HomeSongs = (props) => {
             alt='Album'
           />
         </a>
-        <div>
+        <div className="title">
           Title: {ele.title}
         </div>
-        <div>
+        <div className="artist">
           Artist: {ele.artist}
         </div>
       </div>

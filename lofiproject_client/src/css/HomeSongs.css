@@ -1,18 +1,30 @@
 .AllSongs {
   text-align: center;
   margin: 0 auto;
-  width: 30%;
+  width: 20%;
   border: 1px solid black;
   margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.7)
 }
 
 .albums {
-  width: 300px;
-  height: 300px;
+  width: 85%;
+  height: 85%;
   transition: ease .3s;
   border: 1px solid rgba(255,255,255, .3);
 }
 
 .albums:hover {
-  box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 25px rgba(255, 255, 255, .7);
+}
+
+.title {
+  color: white;
+  padding: 1%;
+}
+
+.artist {
+  color: white;
 }

@@ -3,4 +3,5 @@
   width:100vw;
   flex-wrap: wrap;
   margin-top: 2%;
+  justify-content: space-around;
 }
