@@ -1826,3 +1826,168 @@ Migrating to AddImagesToSongs (20191008125525)
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4258526126755532625)[0m
   [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (41.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (227.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "lofiproject_development"[0m
+  [1m[35m (223.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "lofiproject_test"[0m
+  [1m[35m (640.3ms)[0m  [1m[35mCREATE DATABASE "lofiproject_development" ENCODING = 'unicode'[0m
+  [1m[35m (466.1ms)[0m  [1m[35mCREATE DATABASE "lofiproject_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "yt_link" character varying, "artist" character varying, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "images" character varying)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs_users" CASCADE[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "songs_users" ("user_id" bigint NOT NULL, "song_id" bigint NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "industry_type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191008125525)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191004172451),
+(20191007145429),
+(20191007204420),
+(20191007204727),
+(20191007220543),
+(20191007220833);
+
+[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-08 13:30:50.150969"], ["updated_at", "2019-10-08 13:30:50.150969"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "774a983e4e79500f598978e268828d74c492f21c"], ["created_at", "2019-10-08 13:30:50.160371"], ["updated_at", "2019-10-08 13:30:50.160371"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "yt_link" character varying, "artist" character varying, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "images" character varying)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs_users" CASCADE[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "songs_users" ("user_id" bigint NOT NULL, "song_id" bigint NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "industry_type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191008125525)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191004172451),
+(20191007145429),
+(20191007204420),
+(20191007204727),
+(20191007220543),
+(20191007220833);
+
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-08 13:30:50.258868"], ["updated_at", "2019-10-08 13:30:50.258868"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-10-08 13:30:50.264861"], ["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "774a983e4e79500f598978e268828d74c492f21c"], ["created_at", "2019-10-08 13:30:50.281081"], ["updated_at", "2019-10-08 13:30:50.281081"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.8ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=E2GfJTFWreE"], ["artist", "Spencer Hunt"], ["title", "You'll be okay, I promise"], ["created_at", "2019-10-08 13:30:50.335326"], ["updated_at", "2019-10-08 13:30:50.335326"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/youllbeokaySH_kbcroo.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=vMTeA59oOoM"], ["artist", "Idealism"], ["title", "Controlla"], ["created_at", "2019-10-08 13:30:50.340170"], ["updated_at", "2019-10-08 13:30:50.340170"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/controllaIDEALISM_ljelfi.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=3_D8uKFAT1E"], ["artist", "Idealism"], ["title", "Phosphenes"], ["created_at", "2019-10-08 13:30:50.343674"], ["updated_at", "2019-10-08 13:30:50.343674"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/phosphenesIDEALISM_nclevl.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=jxpEdiB6U88"], ["artist", "Joakim Karud"], ["title", "Canals"], ["created_at", "2019-10-08 13:30:50.347093"], ["updated_at", "2019-10-08 13:30:50.347093"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540942/The%20Lofi%20Project/Albums/canalsJK_njswml.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=rQO8escJC78"], ["artist", "Joakim Karud"], ["title", "Dreams"], ["created_at", "2019-10-08 13:30:50.350344"], ["updated_at", "2019-10-08 13:30:50.350344"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540942/The%20Lofi%20Project/Albums/dreamsJK_tald4e.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=AARhxX2X-io"], ["artist", "Nujabes"], ["title", "Mystline"], ["created_at", "2019-10-08 13:30:50.353719"], ["updated_at", "2019-10-08 13:30:50.353719"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/mystlineNJB_pv6iur.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=aksnDuHI9To"], ["artist", "Elijah Who"], ["title", "This Girl"], ["created_at", "2019-10-08 13:30:50.357963"], ["updated_at", "2019-10-08 13:30:50.357963"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/thisgirlEW_spowj6.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=bOFEQlRdnlE"], ["artist", "Englewood"], ["title", "Tropical Storm"], ["created_at", "2019-10-08 13:30:50.361832"], ["updated_at", "2019-10-08 13:30:50.361832"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/tropicalstormEnglewood_jdqotw.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=xfdo73ZCwLQ"], ["artist", "DJ Kross"], ["title", "Moonlit Clouds"], ["created_at", "2019-10-08 13:30:50.365244"], ["updated_at", "2019-10-08 13:30:50.365244"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/moonlitcloudsDJK_mgyflt.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=GgVcgbtHY9k"], ["artist", "Burbank"], ["title", "Sorry I Like You"], ["created_at", "2019-10-08 13:30:50.368671"], ["updated_at", "2019-10-08 13:30:50.368671"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/srryilyBB_vnwukd.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=tR9UHDzQ7Ys"], ["artist", "Rook1e"], ["title", "Grape Soda"], ["created_at", "2019-10-08 13:30:50.380490"], ["updated_at", "2019-10-08 13:30:50.380490"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540942/The%20Lofi%20Project/Albums/grapesodaROK_ui0zdj.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("yt_link", "artist", "title", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["yt_link", "https://www.youtube.com/watch?v=7ZguAEoNpZw"], ["artist", "L'indécis"], ["title", "Soulful"], ["created_at", "2019-10-08 13:30:50.384000"], ["updated_at", "2019-10-08 13:30:50.384000"], ["images", "https://res.cloudinary.com/mrtommyliang/image/upload/v1570540943/The%20Lofi%20Project/Albums/soulfulLDE_kaja1n.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2019-10-08 09:31:30 -0400
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/tommyliang/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/tommyliang/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 95.2ms | Allocations: 316)
+Completed 200 OK in 157ms (Views: 140.6ms | ActiveRecord: 0.0ms | Allocations: 1602)
+
+
+Started GET "/songs" for ::1 at 2019-10-08 09:31:34 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 15.2ms | ActiveRecord: 6.9ms | Allocations: 10025)
+
+
+Started GET "/songs/1" for ::1 at 2019-10-08 09:31:39 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1200)
+
+
+Started GET "/songs/1/artist" for ::1 at 2019-10-08 09:31:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/songs/1/artist"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2019-10-08 09:31:53 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 2623)
+
+
