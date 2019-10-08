@@ -2,8 +2,8 @@
 font-family: 'Montserrat', sans-serif;
 }
 .headerMain {
+  border-bottom: 1px solid white;
   text-align: center;
-  border-bottom: .5px solid white;
   background: transparent;
   color: white;
   width: 100%;
