@@ -1,6 +1,7 @@
-.helloUsername {
-
+* {
+  outline: none !important;
 }
+
 .helloUsername:hover {
   border-left: none;
 }
@@ -27,12 +28,16 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  display: none;
+  transition: ease .3s
+}
+
+.bm-cross-button:hover {
+  transform: scale(1.5) rotate(180deg);
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: white;
 }
 
 /*
@@ -50,6 +55,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding-top: 2.5em; 
   padding-left: 1em;
   font-size: 1.15em;
+    padding-top: 25%;
+    margin-top: -25%;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -70,6 +77,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   line-height: 50px;
   text-align: left;
   transition: ease .4s !important;
+  font-weight: bold;
 }
 /* Individual item hover */
 .bm-item:hover {
@@ -77,6 +85,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   transform: scale(1.04);
   padding-left: 30px;
   border-left: 1px solid white;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+    padding-top: 25%;
+    margin-top: -25%;
 }
 
 .logReg{
