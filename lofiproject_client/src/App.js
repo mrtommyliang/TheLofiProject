@@ -1,10 +1,19 @@
 import React, {Component} from 'react';
 import {Route, Link} from 'react-router-dom';
+import './css/App.css'
 import { withRouter } from 'react-router';
 import Header from './Components/Header'
 import Home from './Components/Home'
-import { loginUser, registerUser, verifyUser } from './services/api-helper';
-
+import { 
+  loginUser, 
+  registerUser, 
+  verifyUser,
+  showSong,
+  showSongItem,
+  putSong,
+  destroySong,
+  putSongUser
+} from './services/api-helper';
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +21,9 @@ class App extends Component {
 
     this.state = {
     currentUser: null,
+    users: [],
+    songs: [],
+    songItem: null,
     formData: {
         name: ""
       },
@@ -22,11 +34,25 @@ class App extends Component {
     }
   }
 
+  // Function to get all songs from API
+  getSong = async () => {
+    const songs = await showSong();
+    this.setState({ songs })
+  }
+
+  // Function to get a single food item from our API
+  getSongItem = async (id) => {
+    const songItem = await showSongItem(id);
+    this.setState({ songItem })
+  }
+
+
   handleLoginButton = () => {
       this.props.history.push("/login")
     }
 
   componentDidMount = async () => {
+    await this.getSong()
     const currentUser = await verifyUser();
     if (currentUser) {
       this.setState({ currentUser })
@@ -80,8 +106,8 @@ class App extends Component {
         handleLogin={this.handleLogin}
         authHandleChange={this.authHandleChange}
         authFormData={this.state.authFormData}
-        handleRegister={this.handleRegister}/>
-
+        handleRegister={this.handleRegister}
+        songs={this.state.songs}/>
       </div>
     );
   }

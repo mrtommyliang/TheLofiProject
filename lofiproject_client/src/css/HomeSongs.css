@@ -1,0 +1,17 @@
+.AllSongs {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.albums {
+  width: 250px;
+  height: 250px;
+  transition: ease .3s;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255,255,255, .3)
+}
+
+.albums:hover {
+  width: 255px;
+  height: 255px;
+}

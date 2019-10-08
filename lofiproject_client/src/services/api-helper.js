@@ -29,23 +29,18 @@ export const verifyUser = async () => {
   return false
 }
 
-export const showFood = async () => {
-  const resp = await api.get(`/foods`)
+export const showSong = async () => {
+  const resp = await api.get(`/songs`)
   return resp.data;
 }
 
-export const showFlavors = async () => {
-  const resp = await api.get(`/flavors`)
+export const showSongItem = async (id) => {
+  const resp = await api(`/songs/${id}`)
   return resp.data;
 }
 
-export const showFoodItem = async (id) => {
-  const resp = await api(`/foods/${id}`)
-  return resp.data;
-}
-
-export const postFood = async (item) => {
-  const resp = await api.post(`/foods`, item, {
+export const postSong = async (item) => {
+  const resp = await api.post(`/songs`, item, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
@@ -53,16 +48,16 @@ export const postFood = async (item) => {
   return resp.data
 }
 
-export const putFood = async (item, id) => {
-  const resp = await api.put(`/foods/${id}`, item, {
+export const putSong = async (item, id) => {
+  const resp = await api.put(`/songs/${id}`, item, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
   }, item)
   return resp.data
 }
-export const destroyFood = async (id) => {
-  const resp = await api.delete(`/foods/${id}`, {
+export const destroySong = async (id) => {
+  const resp = await api.delete(`/songs/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
@@ -70,8 +65,8 @@ export const destroyFood = async (id) => {
   return resp.data;
 }
 
-export const putFoodFlavor = async (food_id, id) => {
-  const resp = await api.put(`/foods/${food_id}/flavors/${id}`, null, {
+export const putSongUser = async (Song_id, id) => {
+  const resp = await api.put(`/songs/${Song_id}/users/${id}`, null, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
