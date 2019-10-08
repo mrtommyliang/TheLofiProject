@@ -8,21 +8,32 @@
   text-align: center;
   padding-top: 1.5%;
   margin-top: 3%;
+  color: white;
+}
+
+.coinsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
+
+.coins {
+  transition: ease .3s;
+}
+
+.coins:hover {
+  transform: scaleX(-1);
+  filter: grayscale(100%);
 }
 
 .lofiArtists {
   height: 120px;
   width: 120px;
   border-radius: 100px;
-  margin-left: 8%;
-  transition: ease .3s;
   border: 1px solid white;
 }
 
-.lofiArtists:hover {
-  transform: scaleX(-1);
-  filter: grayscale(100%)
-}
 
 .summary {
   color: white;
