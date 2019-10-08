@@ -1,0 +1,50 @@
+.aboutContainer {
+  background: rgba(0, 0, 0, .7);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.lofiTitle {
+  text-align: center;
+  padding-top: 1.5%;
+  margin-top: 3%;
+}
+
+.lofiArtists {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin-left: 8%;
+  transition: ease .3s;
+  border: 1px solid white;
+}
+
+.lofiArtists:hover {
+  transform: scaleX(-1);
+  filter: grayscale(100%)
+}
+
+.summary {
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 1%;
+  line-height: 40px;
+}
+
+#citation {
+  line-height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(38, 120, 192);
+transition: ease .3s;
+}
+
+a:hover {
+  font-size: 21px;
+  border-bottom: 1px solid white;
+}
