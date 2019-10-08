@@ -1,17 +1,30 @@
 .AllSongs {
-  border: 1px solid black;
   text-align: center;
+  margin: 0 auto;
+  width: 20%;
+  border: 1px solid black;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.7)
 }
 
 .albums {
-  width: 250px;
-  height: 250px;
+  width: 85%;
+  height: 85%;
   transition: ease .3s;
-  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255,255,255, .3)
+  border: 1px solid rgba(255,255,255, .3);
 }
 
 .albums:hover {
-  width: 255px;
-  height: 255px;
+  box-shadow: 2px 4px 25px rgba(255, 255, 255, .7);
+}
+
+.title {
+  color: white;
+  padding: 1%;
+}
+
+.artist {
+  color: white;
 }
