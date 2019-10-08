@@ -9,11 +9,11 @@ body {
 }
 
 html {
-background-image: linear-gradient(to top, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .4) 100%),
-url('./images/lofibg.jpg');
-height: auto;
-background-attachment: fixed;
-background-size: cover;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .4) 100%),
+  url('./images/lofibg.jpg');
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 code {

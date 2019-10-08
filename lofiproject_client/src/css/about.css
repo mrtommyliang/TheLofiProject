@@ -38,13 +38,13 @@
   line-height: 40px;
 }
 
-a {
+.aboutArt {
   text-decoration: none;
   color: rgb(38, 120, 192);
-transition: ease .3s;
+  transition: ease .3s;
 }
 
-a:hover {
-  font-size: 21px;
+.aboutArt:hover {
+  font-size: 20px;
   border-bottom: 1px solid white;
 }
