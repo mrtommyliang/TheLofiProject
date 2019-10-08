@@ -30,22 +30,17 @@ export const verifyUser = async () => {
 }
 
 export const showSong = async () => {
-  const resp = await api.get(`/Songs`)
-  return resp.data;
-}
-
-export const showFlavors = async () => {
-  const resp = await api.get(`/flavors`)
+  const resp = await api.get(`/songs`)
   return resp.data;
 }
 
 export const showSongItem = async (id) => {
-  const resp = await api(`/Songs/${id}`)
+  const resp = await api(`/songs/${id}`)
   return resp.data;
 }
 
 export const postSong = async (item) => {
-  const resp = await api.post(`/Songs`, item, {
+  const resp = await api.post(`/songs`, item, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
@@ -54,7 +49,7 @@ export const postSong = async (item) => {
 }
 
 export const putSong = async (item, id) => {
-  const resp = await api.put(`/Songs/${id}`, item, {
+  const resp = await api.put(`/songs/${id}`, item, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
@@ -62,7 +57,7 @@ export const putSong = async (item, id) => {
   return resp.data
 }
 export const destroySong = async (id) => {
-  const resp = await api.delete(`/Songs/${id}`, {
+  const resp = await api.delete(`/songs/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
@@ -70,8 +65,8 @@ export const destroySong = async (id) => {
   return resp.data;
 }
 
-export const putSongFlavor = async (Song_id, id) => {
-  const resp = await api.put(`/Songs/${Song_id}/flavors/${id}`, null, {
+export const putSongUser = async (Song_id, id) => {
+  const resp = await api.put(`/songs/${Song_id}/users/${id}`, null, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     }
