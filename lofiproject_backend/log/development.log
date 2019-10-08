@@ -1816,3 +1816,13 @@ Migrating to RemoveUserIdFromSongs (20191007220833)
   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "songs_users" ON "songs"."id" = "songs_users"."song_id" WHERE "songs_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "songs_users" ON "users"."id" = "songs_users"."user_id" WHERE "songs_users"."song_id" = $1 LIMIT $2[0m  [["song_id", 2], ["LIMIT", 11]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4258526126755532625)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddImagesToSongs (20191008125525)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (43.0ms)[0m  [1m[35mALTER TABLE "songs" ADD "images" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191008125525"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4258526126755532625)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
