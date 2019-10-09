@@ -10,8 +10,11 @@ import Login from './Login'
 import Register from './Register';
 import HomeSongs from './HomeSongs';
 import '../css/Home.css'
+import User from './User'
 
 const Home = (props) => {
+  // console.log(props.currentUser);
+  
   return (
     <div className="mainBody">
       <div className="bodyOverlay">
@@ -50,6 +53,11 @@ const Home = (props) => {
           <Route path='/daily_mix' component={Dailymix} />
           <Route path='/recommended' component={Recommendations} />
           <Route path='/programmers_mix' component={Programmers} />
+          <Route path='/user' render={() => (
+            <User
+              currentUser={props.currentUser}/>
+          )} />
+
         </Switch>
       </div>
     </div>
