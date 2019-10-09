@@ -20,6 +20,8 @@ const Home = (props) => {
             <div className="homeSongs">
               <HomeSongs
                 songs={props.songs}
+                favorites={props.favorites}
+                removeFavorites={props.removeFavorites}
                 getFavorites={props.getFavorites}
               />
             </div>

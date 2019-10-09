@@ -34,7 +34,8 @@ class App extends Component {
     }
   }
 // Favorites Function
-getFavorites = (e) => {
+getFavorites = async (e) => {
+  await putSong(e.id)
   this.setState({
     favorites: [...this.state.favorites, e]
   })
@@ -42,7 +43,8 @@ getFavorites = (e) => {
 }
 
 // Remove Favorites Function
-removeFavorites = (ele) => {
+removeFavorites = async (ele) => {
+  await destroySong(ele.id)
   this.setState({
     favorites: [...this.state.favorites.filter((favorite) => favorite.id !== ele.id)]
   })
