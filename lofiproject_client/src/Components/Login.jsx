@@ -4,7 +4,6 @@ import '../css/Login.css'
 
 // This component handles our login form and has a link to the register form
 const Login = (props) => {
-  console.log('login props', props)
   return (
     <div>
       <form onSubmit={(e) => {
