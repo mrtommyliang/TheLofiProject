@@ -1,8 +1,40 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom';
+import '../css/HomeSongs.css'
 
-const Favorites = () => {
+const Favorites = (props) => {
+  const list = props.favorites.map(ele => {
+    return (
+      <div className="AllSongs">
+
+        <a href={ele.yt_link}>
+          <img
+            className="albums"
+            src={ele.images}
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+
+        <div className="title">
+          Title: {ele.title}
+        </div>
+
+        <div className="artist">
+          Artist: {ele.artist}
+        </div>
+
+        <button
+          onClick={() => props.getFavorites(ele)}
+          className="favoritesbtn">Favorite</button>
+
+      </div>
+    )
+  })
   return (
-    <h1>This is Favorites</h1>
+    <>
+      {list}
+    </>
   )
 }
 

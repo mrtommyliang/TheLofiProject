@@ -40,7 +40,7 @@ getFavorites = (e) => {
   this.setState({
     favorites: [...this.state.favorites, e]
   })
-  console.log(this.state.favorites)
+  alert('Added to Favorites!')
 }
 
 
@@ -113,6 +113,7 @@ getFavorites = (e) => {
 
         
         <Home 
+        favorites={this.state.favorites}
         getFavorites={this.getFavorites}
         handleLogin={this.handleLogin}
         authHandleChange={this.authHandleChange}
