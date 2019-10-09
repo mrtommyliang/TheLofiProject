@@ -18,8 +18,9 @@ const Home = (props) => {
         <Switch>
           <Route exact path='/' render={() => (
             <div className="homeSongs">
-              <HomeSongs 
+              <HomeSongs
                 songs={props.songs}
+                getFavorites={props.getFavorites}
               />
             </div>
           )} />

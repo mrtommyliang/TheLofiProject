@@ -10,7 +10,7 @@ const HomeSongs = (props) => {
         <a href={ele.yt_link}>
           <img
             className="albums"
-            src={ele.images} 
+            src={ele.images}
             target="_blank"
             alt='Album'
           />
@@ -24,7 +24,9 @@ const HomeSongs = (props) => {
           Artist: {ele.artist}
         </div>
 
-        <button className="favoritesbtn">Favorite</button>
+        <button 
+        onClick={() => props.getFavorites(ele)}
+        className="favoritesbtn">Favorite</button>
 
       </div>
     )

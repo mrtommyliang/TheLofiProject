@@ -19,7 +19,7 @@
 }
 
 .coins {
-  transition: ease .3s;
+  transition: ease .05s;
 }
 
 .coins:hover {

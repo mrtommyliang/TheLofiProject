@@ -23,6 +23,7 @@ class App extends Component {
     currentUser: null,
     users: [],
     songs: [],
+    favorites: [],
     songItem: null,
     formData: {
         name: ""
@@ -33,6 +34,15 @@ class App extends Component {
       }
     }
   }
+// Favorites Function
+getFavorites = (e) => {
+  // e.preventDefault()
+  this.setState({
+    favorites: [...this.state.favorites, e]
+  })
+  console.log(this.state.favorites)
+}
+
 
   // Function to get all songs from API
   getSong = async () => {
@@ -103,6 +113,7 @@ class App extends Component {
 
         
         <Home 
+        getFavorites={this.getFavorites}
         handleLogin={this.handleLogin}
         authHandleChange={this.authHandleChange}
         authFormData={this.state.authFormData}
