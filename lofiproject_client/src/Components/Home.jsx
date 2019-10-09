@@ -40,6 +40,7 @@ const Home = (props) => {
           <Route path='/favorites' render={() => (
             <div className="homeSongs">
               <Favorites 
+                removeFavorites={props.removeFavorites}
                 favorites={props.favorites}
               />
             </div>

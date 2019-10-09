@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import '../css/HomeSongs.css'
 
 const Favorites = (props) => {
@@ -25,8 +24,8 @@ const Favorites = (props) => {
         </div>
 
         <button
-          onClick={() => props.getFavorites(ele)}
-          className="favoritesbtn">Favorite</button>
+          onClick={() => props.removeFavorites(ele)}
+          className="favoritesbtn">Remove</button>
 
       </div>
     )

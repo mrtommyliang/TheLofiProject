@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Route, Link} from 'react-router-dom';
 import './css/App.css'
 import { withRouter } from 'react-router';
 import Header from './Components/Header'
@@ -36,11 +35,17 @@ class App extends Component {
   }
 // Favorites Function
 getFavorites = (e) => {
-  // e.preventDefault()
   this.setState({
     favorites: [...this.state.favorites, e]
   })
   alert('Added to Favorites!')
+}
+
+// Remove Favorites Function
+removeFavorites = (ele) => {
+  this.setState({
+    favorites: [...this.state.favorites.filter((favorite) => favorite.id !== ele.id)]
+  })
 }
 
 
@@ -106,13 +111,15 @@ getFavorites = (e) => {
   render() {
     return (
       <div className= 'App'>
-        <Header currentUser= {this.state.currentUser}
+        <Header 
+        currentUser= {this.state.currentUser}
         handleLogout={this.handleLogout} 
         handleLoginButton={this.handleLoginButton}
         authHandleChange={this.authHandleChange}/>
 
         
         <Home 
+        removeFavorites={this.removeFavorites}
         favorites={this.state.favorites}
         getFavorites={this.getFavorites}
         handleLogin={this.handleLogin}
