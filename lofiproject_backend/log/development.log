@@ -4235,3 +4235,45 @@ Processing by AuthenticationController#verify as HTML
 Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 817)
 
 
+Started GET "/songs" for ::1 at 2019-10-09 11:04:55 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (184.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 200ms (Views: 15.2ms | ActiveRecord: 184.8ms | Allocations: 8162)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-09 11:04:55 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 814)
+
+
+Started GET "/songs" for ::1 at 2019-10-09 11:05:09 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (2.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 2.0ms | Allocations: 8164)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-09 11:05:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 1.3ms | Allocations: 814)
+
+
+Started GET "/songs" for ::1 at 2019-10-09 11:05:41 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (4.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 4.3ms | Allocations: 8161)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-09 11:05:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.6ms | Allocations: 814)
+
+
