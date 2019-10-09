@@ -2,9 +2,6 @@
   outline: none !important;
 }
 
-.helloUsername:hover {
-  border-left: none;
-}
 
 /* Position and sizing of burger button */
 .bm-burger-button {
