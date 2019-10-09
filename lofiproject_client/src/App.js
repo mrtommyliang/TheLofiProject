@@ -10,8 +10,7 @@ import {
   showSong,
   showSongItem,
   putSong,
-  destroySong,
-  putSongUser
+  destroySong
 } from './services/api-helper';
 
 class App extends Component {
