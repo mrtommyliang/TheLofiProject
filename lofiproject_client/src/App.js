@@ -121,6 +121,7 @@ removeFavorites = async (ele) => {
 
         
         <Home 
+        currentUser= {this.state.currentUser}
         removeFavorites={this.removeFavorites}
         favorites={this.state.favorites}
         getFavorites={this.getFavorites}
