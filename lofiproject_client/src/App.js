@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Route, Link} from 'react-router-dom';
 import './css/App.css'
 import { withRouter } from 'react-router';
 import Header from './Components/Header'
@@ -23,6 +22,7 @@ class App extends Component {
     currentUser: null,
     users: [],
     songs: [],
+    favorites: [],
     songItem: null,
     formData: {
         name: ""
@@ -33,6 +33,21 @@ class App extends Component {
       }
     }
   }
+// Favorites Function
+getFavorites = (e) => {
+  this.setState({
+    favorites: [...this.state.favorites, e]
+  })
+  alert('Added to Favorites!')
+}
+
+// Remove Favorites Function
+removeFavorites = (ele) => {
+  this.setState({
+    favorites: [...this.state.favorites.filter((favorite) => favorite.id !== ele.id)]
+  })
+}
+
 
   // Function to get all songs from API
   getSong = async () => {
@@ -96,13 +111,17 @@ class App extends Component {
   render() {
     return (
       <div className= 'App'>
-        <Header currentUser= {this.state.currentUser}
+        <Header 
+        currentUser= {this.state.currentUser}
         handleLogout={this.handleLogout} 
         handleLoginButton={this.handleLoginButton}
         authHandleChange={this.authHandleChange}/>
 
         
         <Home 
+        removeFavorites={this.removeFavorites}
+        favorites={this.state.favorites}
+        getFavorites={this.getFavorites}
         handleLogin={this.handleLogin}
         authHandleChange={this.authHandleChange}
         authFormData={this.state.authFormData}

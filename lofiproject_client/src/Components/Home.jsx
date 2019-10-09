@@ -18,8 +18,9 @@ const Home = (props) => {
         <Switch>
           <Route exact path='/' render={() => (
             <div className="homeSongs">
-              <HomeSongs 
+              <HomeSongs
                 songs={props.songs}
+                getFavorites={props.getFavorites}
               />
             </div>
           )} />
@@ -36,7 +37,14 @@ const Home = (props) => {
               authFormData={props.authFormData} />)} />
 
           <Route exact path='/about' component={About} />
-          <Route path='/favorites' component={Favorites} />
+          <Route path='/favorites' render={() => (
+            <div className="homeSongs">
+              <Favorites 
+                removeFavorites={props.removeFavorites}
+                favorites={props.favorites}
+              />
+            </div>
+          )} />
           <Route path='/daily_mix' component={Dailymix} />
           <Route path='/recommended' component={Recommendations} />
           <Route path='/programmers_mix' component={Programmers} />

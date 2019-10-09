@@ -6,6 +6,7 @@
   margin-top: 1%;
   margin-bottom: 1%;
   padding: 1%;
+  padding-bottom: 2%;
   background: rgba(0, 0, 0, 0.7)
 }
 
@@ -13,14 +14,14 @@
   width: 85%;
   height: 85%;
   transition: ease .3s;
-  border: 1px solid rgba(255,255,255, .3);
+  border: 1px solid rgba(255, 255, 255, .3);
 }
 
 .albums:hover {
   box-shadow: 2px 4px 25px rgba(255, 255, 255, .7);
 }
 
-a{
+a {
   text-decoration: none !important;
 }
 
@@ -31,4 +32,20 @@ a{
 
 .artist {
   color: white;
+}
+
+.favoritesbtn {
+  color: #000;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 1% 0;
+  padding: 5px;
+  border: 2px solid rgba(169, 169, 169, .3);
+  transition: ease .2s;
+}
+
+.favoritesbtn:hover {
+  border: 2px solid #fa709a;
+  cursor: pointer;
 }
