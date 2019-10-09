@@ -40,7 +40,7 @@ input:focus {
   border: none;
 }
 
-button {
+.logregBtn {
   color: #000;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -60,9 +60,9 @@ button {
   transition: ease .3s;
 }
 
-button:hover {
+.logregBtn:hover {
   background: white;
-  border: 2px solid rgb(40, 37, 230);
+  border: 2px solid rgb(95, 93, 236);
   cursor: pointer;
 }
 
