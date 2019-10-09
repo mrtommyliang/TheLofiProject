@@ -3,12 +3,16 @@ font-family: 'Montserrat', sans-serif;
 }
 .headerMain {
   text-align: center;
-  color: white;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
-}
-h1 {
   margin: 0;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+.pagetitle {
+  color: white;
+  font-size: 44px;
+  font-weight: bolder;
+  transition: ease .3s;
 }
