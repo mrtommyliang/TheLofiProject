@@ -40,28 +40,16 @@ export const showSongItem = async (id) => {
 }
 
 export const postSong = async (item) => {
-  const resp = await api.post(`/songs`, item, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("jwt")}`
-    }
-  })
+  const resp = await api.post(`/songs`, item)
   return resp.data
 }
 
-export const putSong = async (item, id) => {
-  const resp = await api.put(`/songs/${id}`, item, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("jwt")}`
-    }
-  }, item)
+export const putSong = async (id) => {
+  const resp = await api.put(`/songs/${id}`)
   return resp.data
 }
 export const destroySong = async (id) => {
-  const resp = await api.delete(`/songs/${id}`, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("jwt")}`
-    }
-  });
+  const resp = await api.delete(`/songs/${id}`);
   return resp.data;
 }
 

@@ -23,9 +23,14 @@ const HomeSongs = (props) => {
           Artist: {ele.artist}
         </div>
 
-        <button 
-        onClick={() => props.getFavorites(ele)}
-        className="favoritesbtn">Favorite</button>
+        {props.favorites.find((fav) => fav.id === ele.id) ? 
+          <button 
+            onClick={() => props.removeFavorites(ele)}
+            className="favoritesbtn">Remove</button> :
+          <button
+            onClick={() => props.getFavorites(ele)}
+            className="favoritesbtn">Favorite</button>
+          }
 
       </div>
     )
