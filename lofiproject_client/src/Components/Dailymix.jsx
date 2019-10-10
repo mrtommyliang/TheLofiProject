@@ -5,11 +5,10 @@ const Dailymix = () => {
   return (
     <div className="livemixes">
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=hHW1oY26kxQ">
+        <a href="https://www.youtube.com/watch?v=hHW1oY26kxQ" target="_blank">
           <img
             className="albums"
             src="https://video-images.vice.com/articles/5b48bb7cc15b9700072bf196/lede/1531510329339-lofihiphop.jpeg?crop=0.9029535864978903xw%3A1xh%3Bcenter%2Ccenter&resize=2000%3A*"
-            target="_blank"
             alt='Album'
           />
         </a>
@@ -22,11 +21,10 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=EcEMX-63PKY">
+        <a href="https://www.youtube.com/watch?v=EcEMX-63PKY" target="_blank">
           <img
             className="albums"
             src="https://i.ytimg.com/vi/EcEMX-63PKY/maxresdefault.jpg"
-            target="_blank"
             alt='Album'
           />
         </a>
@@ -39,11 +37,10 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=GEKY86GGYso">
+        <a href="https://www.youtube.com/watch?v=GEKY86GGYso" target="_blank">
           <img
             className="albums"
             src="https://www.noir85.com/wp-content/uploads/2018/07/lofi-hip-hop-radio-relaxing-beat-900x506.jpg"
-            target="_blank"
             alt='Album'
           />
         </a>
@@ -56,11 +53,10 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=yaKeFoNOneg">
+        <a href="https://www.youtube.com/watch?v=yaKeFoNOneg" target="_blank">
           <img
             className="albums"
             src="https://i.ytimg.com/vi/yaKeFoNOneg/maxresdefault.jpg"
-            target="_blank"
             alt='Album'
           />
         </a>
@@ -73,11 +69,10 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=EGuGPJfHPjo">
+        <a href="https://www.youtube.com/watch?v=EGuGPJfHPjo" target="_blank">
           <img
             className="albums"
             src="http://www.brooklynvegan.com/files/2018/01/hey-arnold.jpg"
-            target="_blank"
             alt='Album'
           />
         </a>
@@ -90,11 +85,10 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=vw3iCuCRm0Q">
+        <a href="https://www.youtube.com/watch?v=vw3iCuCRm0Q" target="_blank">
           <img
             className="albums"
             src="https://i.ytimg.com/vi/YWs0Kn-2YgA/maxresdefault.jpg"
-            target="_blank"
             alt='Album'
           />
         </a>
@@ -107,11 +101,10 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=a1GDdawym1U">
+        <a href="https://www.youtube.com/watch?v=a1GDdawym1U" target="_blank">
           <img
             className="albums"
             src="https://i.ytimg.com/vi/oiLTQ8_rv88/maxresdefault.jpg"
-            target="_blank"
             alt='Album'
           />
         </a>
@@ -124,11 +117,10 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=n5rS9vNbCDg">
+        <a href="https://www.youtube.com/watch?v=n5rS9vNbCDg" target="_blank">
           <img
             className="albums"
             src="https://i.ytimg.com/vi/3KQPsMbMq6Q/maxresdefault.jpg"
-            target="_blank"
             alt='Album'
           />
         </a>
