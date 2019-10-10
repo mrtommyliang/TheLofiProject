@@ -1,3 +1,8 @@
+.livemixes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .recoTitle {
   color: white;
   font-size: 22px;

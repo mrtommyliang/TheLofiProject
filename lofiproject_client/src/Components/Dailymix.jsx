@@ -3,8 +3,7 @@ import '../css/HomeSongs.css'
 
 const Dailymix = () => {
   return (
-    <div>
-      <h1 className="recoTitle">Live Stations</h1>
+    <div className="livemixes">
       <div className="AllSongs">
         <a href="https://www.youtube.com/watch?v=hHW1oY26kxQ">
           <img
@@ -14,35 +13,132 @@ const Dailymix = () => {
             alt='Album'
           />
         </a>
-
         <div className="title">
-          Title: Beats to Study and Relax To
-      </div>
-
+          Title: 24/7 Beats to Study and Relax To
+        </div>
         <div className="artist">
           Artist: ChilledCow
+        </div>
       </div>
 
-      </div>
       <div className="AllSongs">
-      <a href="https://www.youtube.com/watch?v=EcEMX-63PKY">
-        <img
-          className="albums"
-          src="https://i.ytimg.com/vi/EcEMX-63PKY/maxresdefault.jpg"
-          target="_blank"
-          alt='Album'
-        />
-      </a>
-
-      <div className="title">
-        Title: Beats to Chill and Sleep To
+        <a href="https://www.youtube.com/watch?v=EcEMX-63PKY">
+          <img
+            className="albums"
+            src="https://i.ytimg.com/vi/EcEMX-63PKY/maxresdefault.jpg"
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+        <div className="title">
+          Title: 24/7 Beats to Chill and Sleep To
+      </div>
+        <div className="artist">
+          Artist: ChilledCow
+        </div>
       </div>
 
-      <div className="artist">
-        Artist: ChilledCow
+      <div className="AllSongs">
+        <a href="https://www.youtube.com/watch?v=GEKY86GGYso">
+          <img
+            className="albums"
+            src="https://www.noir85.com/wp-content/uploads/2018/07/lofi-hip-hop-radio-relaxing-beat-900x506.jpg"
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+        <div className="title">
+          Title: 24/7 Beats to Study and Sleep To
+      </div>
+        <div className="artist">
+          Artist: STEEZY
+      </div>
       </div>
 
-    </div>
+      <div className="AllSongs">
+        <a href="https://www.youtube.com/watch?v=yaKeFoNOneg">
+          <img
+            className="albums"
+            src="https://i.ytimg.com/vi/yaKeFoNOneg/maxresdefault.jpg"
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+        <div className="title">
+          Title: 24/7 Beats to study/chill/relax
+      </div>
+        <div className="artist">
+          Artist: College Music
+        </div>
+      </div>
+
+      <div className="AllSongs">
+        <a href="https://www.youtube.com/watch?v=EGuGPJfHPjo">
+          <img
+            className="albums"
+            src="http://www.brooklynvegan.com/files/2018/01/hey-arnold.jpg"
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+        <div className="title">
+          Title: CHILL AND RIDE
+      </div>
+        <div className="artist">
+          Artist: The Bootleg Boy
+        </div>
+      </div>
+
+      <div className="AllSongs">
+        <a href="https://www.youtube.com/watch?v=vw3iCuCRm0Q">
+          <img
+            className="albums"
+            src="https://i.ytimg.com/vi/YWs0Kn-2YgA/maxresdefault.jpg"
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+        <div className="title">
+          Title: Chillhop Essentials - Fall 2019
+      </div>
+        <div className="artist">
+          Artist: Chillhop Music
+        </div>
+      </div>
+
+      <div className="AllSongs">
+        <a href="https://www.youtube.com/watch?v=a1GDdawym1U">
+          <img
+            className="albums"
+            src="https://thefindmag.com/wp-content/uploads/Nujabes-4.jpg"
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+        <div className="title">
+          Title: Luv Sic pt. 4
+      </div>
+        <div className="artist">
+          Artist: Nujabes ft. Shing02
+        </div>
+      </div>
+
+      <div className="AllSongs">
+        <a href="https://www.youtube.com/watch?v=EcEMX-63PKY">
+          <img
+            className="albums"
+            src="https://i.ytimg.com/vi/EcEMX-63PKY/maxresdefault.jpg"
+            target="_blank"
+            alt='Album'
+          />
+        </a>
+        <div className="title">
+          Title: 24/7 Beats to Chill and Sleep To
+      </div>
+        <div className="artist">
+          Artist: ChilledCow
+        </div>
+      </div>
     </div>
   )
 }
