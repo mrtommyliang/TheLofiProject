@@ -38,7 +38,6 @@ getFavorites = async (e) => {
   this.setState({
     favorites: [...this.state.favorites, e]
   })
-  alert('Added to Favorites!')
 }
 
 // Remove Favorites Function
