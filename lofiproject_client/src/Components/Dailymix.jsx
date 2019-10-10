@@ -110,7 +110,7 @@ const Dailymix = () => {
         <a href="https://www.youtube.com/watch?v=a1GDdawym1U">
           <img
             className="albums"
-            src="https://thefindmag.com/wp-content/uploads/Nujabes-4.jpg"
+            src="https://i.ytimg.com/vi/oiLTQ8_rv88/maxresdefault.jpg"
             target="_blank"
             alt='Album'
           />
@@ -124,19 +124,19 @@ const Dailymix = () => {
       </div>
 
       <div className="AllSongs">
-        <a href="https://www.youtube.com/watch?v=EcEMX-63PKY">
+        <a href="https://www.youtube.com/watch?v=n5rS9vNbCDg">
           <img
             className="albums"
-            src="https://i.ytimg.com/vi/EcEMX-63PKY/maxresdefault.jpg"
+            src="https://i.ytimg.com/vi/3KQPsMbMq6Q/maxresdefault.jpg"
             target="_blank"
             alt='Album'
           />
         </a>
         <div className="title">
-          Title: 24/7 Beats to Chill and Sleep To
+          Title: NO SLEEP
       </div>
         <div className="artist">
-          Artist: ChilledCow
+          Artist: The Bootleg Boy
         </div>
       </div>
     </div>

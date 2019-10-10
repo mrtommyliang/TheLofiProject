@@ -5289,3 +5289,83 @@ Processing by AuthenticationController#verify as HTML
 Completed 200 OK in 115ms (Views: 5.3ms | ActiveRecord: 107.7ms | Allocations: 1898)
 
 
+Started GET "/songs" for ::1 at 2019-10-10 10:03:29 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (2.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 2.2ms | Allocations: 8164)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-10 10:03:29 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (148.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mSong Load (1.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "songs_users" ON "songs"."id" = "songs_users"."song_id" WHERE "songs_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/authentication_controller.rb:17:in `verify'
+Completed 200 OK in 157ms (Views: 3.9ms | ActiveRecord: 150.3ms | Allocations: 1899)
+
+
+Started GET "/songs" for ::1 at 2019-10-10 10:03:56 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.8ms | Allocations: 8164)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-10 10:03:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (34.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mSong Load (36.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "songs_users" ON "songs"."id" = "songs_users"."song_id" WHERE "songs_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/authentication_controller.rb:17:in `verify'
+Completed 200 OK in 81ms (Views: 3.5ms | ActiveRecord: 71.1ms | Allocations: 1898)
+
+
+Started GET "/songs" for ::1 at 2019-10-10 10:04:05 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 8164)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-10 10:04:05 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mSong Load (11.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "songs_users" ON "songs"."id" = "songs_users"."song_id" WHERE "songs_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/authentication_controller.rb:17:in `verify'
+Completed 200 OK in 35ms (Views: 3.2ms | ActiveRecord: 29.8ms | Allocations: 1898)
+
+
+Started GET "/songs" for ::1 at 2019-10-10 10:04:23 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:9:in `index'
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.8ms | Allocations: 8167)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-10 10:04:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mSong Load (3.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "songs_users" ON "songs"."id" = "songs_users"."song_id" WHERE "songs_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/authentication_controller.rb:17:in `verify'
+Completed 200 OK in 20ms (Views: 6.7ms | ActiveRecord: 10.7ms | Allocations: 1898)
+
+
+Started GET "/songs" for ::1 at 2019-10-10 10:05:35 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (5.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 5.8ms | Allocations: 8164)
+
+
+Started GET "/auth/verify" for ::1 at 2019-10-10 10:05:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mSong Load (10.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "songs_users" ON "songs"."id" = "songs_users"."song_id" WHERE "songs_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/authentication_controller.rb:17:in `verify'
+Completed 200 OK in 30ms (Views: 9.9ms | ActiveRecord: 18.6ms | Allocations: 1898)
+
+
