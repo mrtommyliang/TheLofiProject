@@ -59,3 +59,58 @@
   font-size: 20px;
   border-bottom: 1px solid white;
 }
+
+@media (max-width: 425px) {
+  .lofiTitle {
+    font-size: 20px;
+  }
+
+  .aboutContainer {
+    width: 95%;
+  }
+
+  .lofiArtists {
+    width: 75px;
+    height: 75px;
+  }
+
+  .summary {
+    font-size: 12px;
+    line-height: 20px;
+    width: 95%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 896px) {
+  .aboutContainer {
+    width: 95%;
+  }
+
+  .lofiArtists {
+    height: 90px;
+    width: 90px;
+  }
+
+  .summary {
+    font-size: 17px;
+    width: 90%;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 897px) and (max-width: 1024px) {
+  .aboutContainer {
+    width: 95%;
+  }
+
+  .lofiArtists {
+    height: 110px;
+    width: 110px;
+  }
+
+  .summary {
+    font-size: 18px;
+    width: 90%;
+    line-height: 30px;
+  }
+}

@@ -6,11 +6,10 @@ const HomeSongs = (props) => {
     return (
       <div className="AllSongs">
 
-        <a href={ele.yt_link}>
+        <a href={ele.yt_link} target="_blank">
           <img
             className="albums"
-            src={ele.images}
-            target="_blank"
+            src={ele.images} 
             alt='Album'
           />
         </a>

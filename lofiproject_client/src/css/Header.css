@@ -16,3 +16,19 @@ font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   transition: ease .3s;
 }
+
+@media (max-width: 425px) {
+  .pagetitle {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 896px) {
+  .pagetitle {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 897px) and (max-width: 1024px) {
+
+}

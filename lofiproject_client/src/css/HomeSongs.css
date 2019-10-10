@@ -3,11 +3,6 @@
   flex-wrap: wrap;
 }
 
-.recoTitle {
-  color: white;
-  font-size: 22px;
-  text-align: center;
-}
 
 .AllSongs {
   text-align: center;
@@ -59,4 +54,31 @@ a {
 .favoritesbtn:hover {
   border: 2px solid #fa709a;
   cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .AllSongs {
+    width: 90%;
+    margin: 5%;
+    padding: 5%;
+    padding-bottom: 10%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 896px) {
+  .AllSongs {
+    width: 44%;
+    margin: 0 auto;
+    margin-top: 3%; 
+    padding-bottom: 5%;
+  }
+}
+
+@media (min-width: 897px) and (max-width: 1024px) {
+  .AllSongs {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding-bottom: 4%;
+  }
 }
