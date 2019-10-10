@@ -280,7 +280,7 @@ Song.create([{
         "yt_link": "https://www.youtube.com/watch?v=az1mNyemsZI",
         "artist": "Drvnkdad",
         "title": "Smile Gangsta",
-        "images": "https://res.cloudinary.com/mrtommyliang/image/upload/v1570581846/The%20Lofi%20Project/Albums/drvkdadsmile_h60wsi.jpg"
+        "images": "https://i.ytimg.com/vi/N8VHBJooRwg/maxresdefault.jpg"
     },
     {
         "yt_link": "https://www.youtube.com/watch?v=v5sXDKkO-aA",
