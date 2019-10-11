@@ -50,8 +50,7 @@ const Home = (props) => {
               />
             </div>
           )} />
-          <Route path='/daily_mix' component={Dailymix} />
-          <Route path='/recommended' component={Recommendations} />
+          <Route path='/recommended' component={Dailymix} />
           <Route path='/programmers_mix' component={Programmers} />
           <Route path='/user' render={() => (
             <User
