@@ -27,7 +27,7 @@ Lofi music (otherwise known as low-fidelity) has been integral to my productivit
 
 ## Project Links
 
-[Live Build](www.link.com)
+[Live Build](http://lofiproj.surge.sh/)
 
 ## React Architecture
 
